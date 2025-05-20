@@ -17,15 +17,15 @@ const About = () => {
         <div className="about-right">
           <div className="about-para">
             <p>
-              I am an experienced Frontend Developer with over a decade of professional expertise in the field. Throughout my career, I have had the priviledge of collaborating with prestigious organizations, contributing to their success and growth. 
+              I am a dedicated React.js Frontend Developer with a strong foundation in modern web technologies. I specialize in creating seamless, user-friendly interfaces and am eager to join a dynamic team where I can contribute and further develop my skills.
             </p>
             <p>
-              My passion for frontend development is not only reflected in my extensive experience, but also in the enthisiasm and dedication i bring to each project.
+              My commitment to continuous learning and problem-solving drives me to stay updated with the latest trends in frontend development. I am enthusiastic about collaborating on impactful projects and delivering high-quality solutions.
             </p>
           </div>
           <div className="about-skills">
             <div className="about-skill">
-              <p>HTML & CSS</p>
+              <p>HTML5 & CSS3</p>
               <hr style={{ width: "60%" }} />
             </div>
             <div className="about-skill">
@@ -37,8 +37,20 @@ const About = () => {
               <hr style={{ width: "60%" }} />
             </div>
             <div className="about-skill">
-              <p>Bootstrap</p>
+              <p>Bootstrap CSS</p>
               <hr style={{ width: "60%" }} />
+            </div>
+            <div className="about-skill">
+              <p>Tailwind CSS</p>
+              <hr style={{ width: "55%" }} />
+            </div>
+            <div className="about-skill">
+              <p>Git</p>
+              <hr style={{ width: "50%" }} />
+            </div>
+            <div className="about-skill">
+              <p>GitHub</p>
+              <hr style={{ width: "50%" }} />
             </div>
           </div>
         </div>

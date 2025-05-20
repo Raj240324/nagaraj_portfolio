@@ -3,10 +3,11 @@
     align-items: center;
     justify-content: space-between;
     margin: 20px 100px;
+    position: relative;
 }
-.navbar .logo{
-    width:50px;
-    height:60px;
+.navbar .logo {
+    width: 50px;
+    height: 60px;
 }
 
 .nav-menu {
@@ -30,7 +31,7 @@
     transform: scale(1.05);
 }
 
-/* css for nav bar */
+/* CSS for nav bar */
 .nav-menu li {
     display: flex;
     flex-direction: column;
@@ -56,7 +57,7 @@
     display: none;
 }
 
-/* make the page responsive for mobile view */
+/* Responsive design for mobile view */
 @media(max-width: 768px) {
     .navbar {
         margin: 20px 50px;
@@ -70,14 +71,25 @@
         display: block;
         position: fixed;
         right: 30px;
+        cursor: pointer;
+        z-index: 4;
+        width: 30px;
+        transition: opacity 0.3s ease;
+    }
+
+    .nav-mob-open.hidden {
+        opacity: 0;
+        pointer-events: none;
     }
 
     .nav-mob-close {
         display: block;
-        position: relative;
+        position: absolute;
         top: 30px;
-        left: 290px;
+        right: 30px;
         width: 30px;
+        cursor: pointer;
+        z-index: 3;
     }
 
     .nav-menu {
@@ -90,8 +102,17 @@
         width: 350px;
         height: 100%;
         z-index: 2;
-        transition: right 0.5s ease;
         right: -350px;
+        transition: all 0.5s ease-in-out;
+        transform-origin: right;
+        padding-top:150px;
+    }
+
+    .nav-menu.open {
+        right: 0;
+        transform: translateX(0);
+        opacity: 1;
+        animation: slideIn 0.5s ease-in-out forwards;
     }
 
     .nav-menu li {
@@ -99,5 +120,37 @@
         padding-left: 100px;
         flex-direction: row;
         gap: 20px;
+        opacity: 0;
+        transform: translateX(50px);
+        transition: all 0.3s ease;
+    }
+
+    .nav-menu.open li {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    .nav-menu.open li:nth-child(1) {
+        transition-delay: 0.1s;
+    }
+    .nav-menu.open li:nth-child(2) {
+        transition-delay: 0.2s;
+    }
+    .nav-menu.open li:nth-child(3) {
+        transition-delay: 0.3s;
+    }
+    .nav-menu.open li:nth-child(4) {
+        transition-delay: 0.4s;
+    }
+
+    @keyframes slideIn {
+        0% {
+            transform: translateX(100%) rotate(5deg);
+            opacity: 0;
+        }
+        100% {
+            transform: translateX(0) rotate(0deg);
+            opacity: 1;
+        }
     }
 }

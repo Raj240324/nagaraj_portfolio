@@ -9,10 +9,10 @@ const Hero = () => {
     <div id='home' className="hero">
       <img src={profile_round} alt="" />
       <h1>
-        <span>I'm Nagarajan,</span> Frontend developer based in India.
+        <span>I'm Nagarajan,</span> React.js Frontend Developer
       </h1>
       <p>
-        A Creative Developer turning ideas into reality.
+        Passionate about building modern, responsive web applications with React.js. Actively seeking opportunities to contribute and grow as a Frontend Developer.
       </p>
       <div className="hero-action">
         <div className="hero-connect"><AnchorLink className="anchor-link" offset={50} href="#contact">Connect with Me</AnchorLink></div>

@@ -30,8 +30,9 @@
 }
 .about-left img {
   width: 400px;
-  height: 500px;
+  height: 700px;
   object-fit: cover;
+  border-radius:30px;
 }
 .about-right {
   display: flex;
